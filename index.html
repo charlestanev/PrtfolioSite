@@ -2,142 +2,184 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Charley's Portfolio</title>
-  <link rel="stylesheet" href="newCssFromSass/main.min.css">
+  <link rel="stylesheet" href="newCssFromSass/main.min.css" />
 </head>
 
 <body>
 
-  <div class="welcome">
-    <h1>Welcome to my <span>Portfolio</span></h1>
+
+  <nav>
+    <ul>
+      <li><a href="#home">home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#portfolio">portfolio</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container-all">
+    <div class="welcome" id="home">
+      <button class="menu-button">
+
+        <svg class="hamburger" x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+          <g transform="translate(-15 -15)">
+            <rect x="15" y="16" class="st0" width="30" height="2" />
+          </g>
+          <g transform="translate(-15 -9)">
+            <rect x="15" y="16" class="st0" width="30" height="2" />
+          </g>
+          <g transform="translate(-15 -3)">
+            <rect x="15" y="16" class="st0" width="30" height="2" />
+          </g>
+        </svg>
+
+        <svg class="close-icon" x="0px" y="0px" viewBox="0 0 30 17" height="17" width="30">
+          <g transform="translate(-15 -15)">
+            <polygon class="st0" points="31.2,23.5 37,29.3 35.8,30.5 30,24.7 24.2,30.5 23,29.3 28.8,23.5 23,17.7 24.2,16.5 30,22.3 
+         35.8,16.5 37,17.7 	" />
+          </g>
+        </svg>
+
+      </button>
+
+      <h1>Welcome to my<span>Portfolio</span></h1>
+    </div>
+
+    <section class="intro">
+      <div class="intro-left">
+        <img src="img/welcome-01.png" alt="a laptop" />
+      </div>
+      <div class="intro-middle">
+        <h2>Making it happen</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+          labore culpa modi ipsa explicabo at est omnis ipsum. Perspiciatis,
+          sint atque iusto beatae eum iure veniam animi tenetur quam laborum!
+        </p>
+      </div>
+      <div class="intro-right">
+        <img src="img/welcome-02.png" alt="Two computers and a laptop on the table" />
+      </div>
+    </section>
+
+    <section class="about-me" id="about">
+      <img class="about-img" src="img/ivan-portfolio.png" alt="a picture of Ivan" />
+      <h1 class="about-title">Ivan <br />Portfolio</h1>
+      <h2 class="about-subtitle">Design & Developer</h2>
+      <div class="about-text">
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sint
+          dolorum molestias, reiciendis, hic quas excepturi saepe, ea quasi
+          aspernatur consequatur officia unde eaque nihil itaque eveniet cumque?
+          Cumque quos quibusdam ipsa blanditiis voluptas odit corporis accusamus
+          nulla vero praesentium.
+        </p>
+        <p>
+          Temporibus numquam ipsa ducimus laudantium. Vitae porro sint
+          doloremque non enim cumque rerum necessitatibus aliquid illum pariatur
+          deserunt nostrum ea cum vero soluta, asperiores debitis ex quidem
+          itaque? Repudiandae, eveniet. Placeat dignissimos corporis voluptates
+          sint nobis fugiat ipsam aperiam laudantium?
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <h1>My Work</h1>
+      <div class="portfolio-items">
+        <!-- Portfolio item 1 -->
+        <figure class="portfolio-item">
+          <img src="img/portfolio-01.jpg" alt="portfolio item" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">A short description could go right</p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 2 -->
+        <figure class="portfolio-item">
+          <img src="img/portfolio-02.jpg" alt="portfolio item" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">A short description could go right</p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 3 -->
+        <figure class="portfolio-item">
+          <img src="img/portfolio-03.jpg" alt="portfolio item" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">A short description could go right</p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 4 -->
+        <figure class="portfolio-item">
+          <img src="img/portfolio-04.jpg" alt="portfolio item" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">A short description could go right</p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+
+        <!-- Portfolio item 5 -->
+        <figure class="portfolio-item featured">
+          <img src="img/portfolio-05.jpg" alt="portfolio item" />
+          <figcaption>
+            <h2 class="portfolio-title">Project Name</h2>
+            <p class="portfolio-desc">A short description could go right</p>
+            <a href="#" class="portfolio-link">More Info</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h1>Contact me</h1>
+      <form action="">
+        <label class="name" class="name">Name:
+          <input type="text" id="name" />
+        </label>
+
+        <label class="email" class="email">Email:
+          <input type="email" id="email" />
+        </label>
+
+        <label message="message" class="message">Message:
+          <textarea name="" id="message"></textarea>
+        </label>
+
+        <input class="button form-button" type="submit" value="SEND" />
+      </form>
+    </section>
+    <footer>
+      <p>Follow me on social media</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/charley.tanev">
+          <img class="social-icon" src="img/facebook.svg" alt="facebook" />
+        </a>
+        <a href="https://www.instagram.com/charles_tanev/?hl=bg">
+          <img class="social-icon" src="img/instagram.svg" alt="instagram" />
+        </a>
+        <a href="https://github.com/charlestanev">
+          <img class="social-icon" src="img/github.svg" alt="github" />
+        </a>
+      </div>
+      <p class="copyright">Copyright 2019 Elmir Tanev Portfolio</p>
+    </footer>
+
   </div>
 
-  <section class="intro">
-    <div class="intro-left">
-      <img src="img/welcome-01.png" alt="a laptop">
-    </div>
-    <div class="intro-middle">
-      <h2>Making it happen</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia labore culpa modi ipsa explicabo at est omnis
-        ipsum. Perspiciatis, sint atque iusto beatae eum iure veniam animi tenetur quam laborum!</p>
-    </div>
-    <div class="intro-right">
-      <img src="img/welcome-02.png" alt="Two computers and a laptop on the table">
-    </div>
-  </section>
-
-  <section class="about-me">
-    <img class="about-img" src="img/ivan-portfolio.png" alt="a picture of Ivan">
-    <h1 class="about-title">Ivan <br>Portfolio</h1>
-    <h2 class="about-subtitle">Design & Developer</h2>
-    <div class="about-text">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore sint dolorum molestias, reiciendis, hic quas
-        excepturi saepe, ea quasi aspernatur consequatur officia unde eaque nihil itaque eveniet cumque? Cumque quos
-        quibusdam ipsa blanditiis voluptas odit corporis accusamus nulla vero praesentium.</p>
-      <p>Temporibus numquam ipsa ducimus laudantium. Vitae porro sint doloremque non enim cumque rerum necessitatibus
-        aliquid illum pariatur deserunt nostrum ea cum vero soluta, asperiores debitis ex quidem itaque? Repudiandae,
-        eveniet. Placeat dignissimos corporis voluptates sint nobis fugiat ipsam aperiam laudantium?</p>
-    </div>
-  </section>
-
-  <section class="portfolio">
-    <h1>My Work</h1>
-    <div class="portfolio-items">
-
-      <!-- Portfolio item 1 -->
-      <figure class="portfolio-item">
-        <img src="img/portfolio-01.jpg" alt="portfolio item">
-        <figcaption>
-          <h2 class="portfolio-title">Project Name</h2>
-          <p class="portfolio-desc">A short description could go right</p>
-          <a href="#" class="portfolio-link">More Info</a>
-        </figcaption>
-      </figure>
-
-      <!-- Portfolio item 2 -->
-      <figure class="portfolio-item">
-        <img src="img/portfolio-02.jpg" alt="portfolio item">
-        <figcaption>
-          <h2 class="portfolio-title">Project Name</h2>
-          <p class="portfolio-desc">A short description could go right</p>
-          <a href="#" class="portfolio-link">More Info</a>
-        </figcaption>
-      </figure>
-
-
-      <!-- Portfolio item 3 -->
-      <figure class="portfolio-item">
-        <img src="img/portfolio-03.jpg" alt="portfolio item">
-        <figcaption>
-          <h2 class="portfolio-title">Project Name</h2>
-          <p class="portfolio-desc">A short description could go right</p>
-          <a href="#" class="portfolio-link">More Info</a>
-        </figcaption>
-      </figure>
-
-
-      <!-- Portfolio item 4 -->
-      <figure class="portfolio-item">
-        <img src="img/portfolio-04.jpg" alt="portfolio item">
-        <figcaption>
-          <h2 class="portfolio-title">Project Name</h2>
-          <p class="portfolio-desc">A short description could go right</p>
-          <a href="#" class="portfolio-link">More Info</a>
-        </figcaption>
-      </figure>
-
-
-      <!-- Portfolio item 5 -->
-      <figure class="portfolio-item featured">
-        <img src="img/portfolio-05.jpg" alt="portfolio item">
-        <figcaption>
-          <h2 class="portfolio-title">Project Name</h2>
-          <p class="portfolio-desc">A short description could go right</p>
-          <a href="#" class="portfolio-link">More Info</a>
-        </figcaption>
-      </figure>
-
-
-    </div>
-  </section>
-
-  <section class="contact">
-    <h1>Contact me</h1>
-    <form action="">
-      <label class="name" class="name">Name:
-        <input type="text" id="name">
-      </label>
-
-      <label class="email" class="email">Email:
-        <input type="email" id="email">
-      </label>
-
-      <label message="message" class="message">Message:
-        <textarea name="" id="message"></textarea>
-      </label>
-
-      <input class="button form-button" type="submit" value="SEND">
-
-    </form>
-  </section>
-  <footer>
-    <p>Follow me on social media</p>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/charley.tanev">
-        <img class="social-icon" src="img/facebook.svg" alt="facebook">
-      </a>
-      <a href="https://www.instagram.com/charles_tanev/?hl=bg">
-        <img class="social-icon" src="img/instagram.svg" alt="instagram">
-      </a>
-      <a href="https://github.com/charlestanev">
-        <img class="social-icon" src="img/github.svg" alt="github">
-      </a>
-    </div>
-    <p class="copyright">Copyright 2019 Elmir Tanev Portfolio</p>
-  </footer>
+  <script src="js/nav.js"></script>
 
 </body>
 
