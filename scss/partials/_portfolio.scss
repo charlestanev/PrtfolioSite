@@ -109,6 +109,11 @@
     overflow-x: hidden;
 
     display: none;
+
+
+    &.is-open {
+        display: block;
+    }
 }
 
 .modal-close {
@@ -130,12 +135,31 @@
     text-align: left;
     padding: 5em 0;
     margin-bottom: 2em;
-}
-
-.portfolio-header:nth-of-type(1) {
-    background-image: url(../../img/portfolio-01.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.header-one {
+    background-image: url(../../img/portfolio-01.jpg);
+}
+
+.header-two {
+    background-image: url(../../img/portfolio-02.jpg);
+
+}
+
+.header-three {
+    background-image: url(../../img/portfolio-03.jpg);
+
+}
+
+.header-four {
+    background-image: url(../../img/portfolio-04.jpg);
+
+}
+
+.header-five {
+    background-image: url(../../img/portfolio-05.jpg);
 }
 
 .portfolio-title-box {
@@ -172,9 +196,8 @@
 
 .portfolio-full-width {
     width: 100vw;
-
     max-width: initial;
-    margin: 2em calc(50% - 50vw);
+    margin: 2em 0;
     height: 20vh;
     object-fit: cover;
 }
@@ -184,11 +207,14 @@
         width: 65%;
         float: left;
         margin-right: 2em;
+        margin-bottom: 2em;
     }
 
     .portfolio-pull-right {
         width: 65%;
         float: right;
         margin-left: 2em;
+
+        margin-bottom: 2em;
     }
 }
