@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     background: $white;
     font-size: .875rem;
-    overflow: hidden;
+    overflow-x: hidden;
 
     @include mq {
         font-size: 1.125rem;
