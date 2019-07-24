@@ -20,7 +20,7 @@
         }
 
         span {
-            @include sans-serif($fs: 5.5rem, $color: $accent);
+            @include sans-serif($fs: 3rem, $color: $accent);
             display: block;
 
             @include mq {
@@ -33,7 +33,7 @@
             content: '';
             display: block;
             width: 60%;
-            height: 1px;
+            height: 3px;
             background: $dark-blue;
         }
 

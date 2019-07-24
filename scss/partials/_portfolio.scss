@@ -27,7 +27,7 @@
         right: 0;
         left: 0;
         padding: 1em;
-        background: rgba($accent, .75);
+        background: linear-gradient(180deg, rgba(3, 102, 194, 0.65), rgba(0, 255, 0, 0.65));
         color: $white;
         text-align: left;
         display: flex;
@@ -163,7 +163,7 @@
 }
 
 .portfolio-title-box {
-    background: rgba($accent, .75);
+    background: linear-gradient(180deg, rgba(3, 102, 194, 0.65), rgba(0, 255, 0, 0.65));
     padding: 3em;
     color: white;
     width: 70%;
@@ -188,21 +188,31 @@
 }
 
 .portfolio-content {
-    text-align: left;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 2em;
 }
 
-.portfolio-full-width {
+.portfolio-content .portfolio-full-width {
     width: 100vw;
+    margin: 0 calc(50% - 50vw);
     max-width: initial;
-    margin: 2em 0;
-    height: 20vh;
+    height: 40vh;
     object-fit: cover;
+    padding-bottom: 2em;
+}
+
+.portfolio-pull-left {
+    margin-bottom: 2em;
+}
+
+.portfolio-pull-right {
+    margin-bottom: 2em;
 }
 
 @include mq {
+
+
     .portfolio-pull-left {
         width: 65%;
         float: left;
@@ -214,7 +224,25 @@
         width: 65%;
         float: right;
         margin-left: 2em;
-
         margin-bottom: 2em;
     }
+}
+
+@media screen and (max-width: 400px) {
+    .featured {
+        .portfolio-title {
+            font-size: 3.5rem;
+        }
+
+
+    }
+
+    .portfolio-title {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-title-box .portfolio-title {
+        font-size: 3rem;
+    }
+
 }

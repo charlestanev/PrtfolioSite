@@ -1,9 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Six+Caps&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Arima+Madurai:400,900|Special+Elite&display=swap');
 
 $ff-s: 'Merriweather',
 serif;
 $ff-ss: 'Six Caps',
 sans-serif;
+
+$ff-se: 'Special Elite',
+cursive;
+$ff-am: 'Arima Madurai',
+cursive;
+
 
 $fw-n: 400;
 $ff-b: 900;
@@ -14,6 +20,6 @@ $ff-b: 900;
     color: $color;
     text-transform: $tt;
     line-height: $lh;
-    font-family: $ff-ss;
+    font-family: $ff-se;
     font-weight: $fw-n;
 }
