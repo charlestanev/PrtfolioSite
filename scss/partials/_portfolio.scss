@@ -47,6 +47,11 @@
     margin-bottom: auto;
 }
 
+.portfolio-title-box a {
+    color: white;
+    text-decoration: none;
+}
+
 .portfolio-desc {
     display: none;
 }
@@ -140,26 +145,23 @@
 }
 
 .header-one {
-    background-image: url(../../img/portfolio-01.jpg);
+    background-image: url(../../img/portfolio-cover-img.webp);
 }
 
 .header-two {
-    background-image: url(../../img/portfolio-02.jpg);
-
+    background-image: url(../../img/portfolio-cover-img.webp);
 }
 
 .header-three {
-    background-image: url(../../img/portfolio-03.jpg);
-
+    background-image: url(../../img/portfolio-cover-img.webp);
 }
 
 .header-four {
-    background-image: url(../../img/portfolio-04.jpg);
-
+    background-image: url(../../img/portfolio-cover-img.webp);
 }
 
 .header-five {
-    background-image: url(../../img/portfolio-05.jpg);
+    background-image: url(../../img/portfolio-cover-img.webp);
 }
 
 .portfolio-title-box {
